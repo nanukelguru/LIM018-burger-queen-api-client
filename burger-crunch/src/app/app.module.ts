@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
+import { MenuComponent } from './components/menu/menu.component';
 
 const appRoutes : Routes =[
   {path: 'login', component: LoginComponent}
@@ -13,11 +14,11 @@ const appRoutes : Routes =[
   declarations: [
     AppComponent,
     LoginComponent,
+    MenuComponent,
 
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes),
     AppRoutingModule
   ],
   providers: [],
