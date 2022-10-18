@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
 import { MenuComponent } from './components/menu/menu.component';
 import {ReactiveFormsModule, FormsModule} from '@angular/forms'
+import {HttpClientModule} from '@angular/common/http';
 
 // const appRoutes : Routes =[
 //   {path: 'login', component: LoginComponent}
@@ -22,7 +23,8 @@ import {ReactiveFormsModule, FormsModule} from '@angular/forms'
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
