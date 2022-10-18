@@ -1,60 +1,61 @@
+
 :root {
-  --white: #ca9b33;
+  --gold: #ca9b33;
   --black: #000000;
+  --white: #FFFFFF;
 }
 
-.sectionLogin{
-  background: var(--black);
+.loginForm {
+  // background-color: aqua;
+  text-align: center;
+  margin-top: 2px;
+  padding-top: 2px;
+}
+.logo-container{
+  text-align: center;
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-html {
-  font-size: 62.5%; /* para que 1rem sean 10px */
-}
-body {
-  /* font-family: "Barlow", sans-serif;
-  font-family: "Oswald", sans-serif; */
-  font-family: 'Averia Serif Libre', cursive;
-  font-family: 'Roboto', sans-serif;
-}
-.login {
-  display: flex;
-  flex-direction: column;
-  place-items: center;
+.input{
+  width: 50%;
+  height: 43px;
+  background-color: #FFFFFF;
+  border: var(--gold);
+  border-radius: 8px;
+  font-size: var(--medium);
+  padding: 6px;
+  margin-bottom: auto;
 }
 
-.form-container{
-  // background-color: var(--gold);
-  position: relative;
-  width: 90%;
-  max-width: 400px;
-  min-width: 250px;
-  height: 90%;
-  align-items: center;
-  justify-content: center;
-  padding: 0 5%;
-  border-radius: 20px;
-  margin: 5%;
+.btn-primary{
+  background-color: var(--gold);
+  border-radius: 8px;
+  color:var(--black);
+  width: 25%;
+  height: 43px;
+  cursor: pointer;
+  font-size: var(--medium);
+  font-weight: bold;
+  margin: 0 auto;
 }
-.form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.logo-circle {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  // width: 137px;
-  // height: 141px;
-  background: var(--pale-logo);
-  border-radius: 50%;
-  margin: 10px 0;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
