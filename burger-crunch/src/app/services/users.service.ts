@@ -17,6 +17,10 @@ export class UsersService {
     console.log('CREDENTIAL', credential);
     return this.http.post<any>(this.urlAPI + '/auth', credential);
   }
+
+  // getUserByEmail(email: string): Observable<User> {
+  //   return this.http.get<User>(this.urlAPI + `/users/${email}`);
+  // }
 }
 
 // email?: string | null | undefined;
