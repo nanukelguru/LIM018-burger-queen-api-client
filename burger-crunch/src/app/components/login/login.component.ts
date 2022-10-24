@@ -13,8 +13,8 @@ export class LoginComponent implements OnInit {
 
   constructor(private usersService: UsersService, private router: Router) {
     this.loginForm = new FormGroup({
-      email: new FormControl('', Validators.required),
-      password: new FormControl('', Validators.required),
+      email: new FormControl('iam@fakel.lol', Validators.required),
+      password: new FormControl('apasswordtochange', Validators.required),
     });
   }
 
@@ -22,9 +22,14 @@ export class LoginComponent implements OnInit {
 
   onLogin() {
     console.log(this.loginForm.value);
-    this.usersService.getTokenAuth(this.loginForm.value).subscribe((data) => {
-      console.log('DATA:::', data);
-      this.router.navigate(['menu']);
+    this.usersService.getTokenAuth(this.loginForm.value)
+    .subscribe((data) => {
+      // console.log('DATA:::', data);
+            if (data.token) {
+            console.log(data.token)
+            localStorage.setItem("token", data.token)
+           this.router.navigate(['menu']);
+            }
     });
   }
 }

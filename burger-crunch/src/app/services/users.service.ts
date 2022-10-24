@@ -1,6 +1,14 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
+
+const httpOptions = {
+  headers: new HttpHeaders({
+    'Content-Type': 'application/json',
+    Authorization: 'my-auth-token',
+  }),
+};
+
 
 interface userI {
   email: string;
@@ -15,7 +23,7 @@ export class UsersService {
 
   getTokenAuth(credential: object): Observable<any> {
     console.log('CREDENTIAL', credential);
-    return this.http.post<any>(this.urlAPI + '/auth', credential);
+    return this.http.post<any>(this.urlAPI + '/auth', credential,httpOptions);
   }
 
   // getUserByEmail(email: string): Observable<User> {
