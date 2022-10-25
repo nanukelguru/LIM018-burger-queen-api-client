@@ -12,13 +12,14 @@ export class LoginComponent implements OnInit {
   loginForm: FormGroup;
 
   constructor(private usersService: UsersService, private router: Router) {
-    this.loginForm = new FormGroup({
-      email: new FormControl('iam@fakel.lol', Validators.required),
-      password: new FormControl('apasswordtochange', Validators.required),
-    });
+
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.loginForm = new FormGroup({
+    email: new FormControl('iam@fakel.lol', Validators.required),
+    password: new FormControl('apasswordtochange', Validators.required),
+  });}
 
   onLogin() {
     console.log(this.loginForm.value);

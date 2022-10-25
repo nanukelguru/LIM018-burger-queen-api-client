@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
+// import{ User} from './../components/users-control/user-control/user-control-interface'
 
 const httpOptions = {
   headers: new HttpHeaders({
@@ -10,10 +11,7 @@ const httpOptions = {
 };
 
 
-interface userI {
-  email: string;
-  password: string;
-}
+
 @Injectable({
   providedIn: 'root',
 })

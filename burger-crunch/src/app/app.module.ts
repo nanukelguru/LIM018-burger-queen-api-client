@@ -7,6 +7,9 @@ import { AppComponent } from './app.component';
 // import { MenuComponent } from './components/menu/menu.component';
 import {ReactiveFormsModule, FormsModule} from '@angular/forms'
 import {HttpClientModule} from '@angular/common/http';
+import { ProductsListComponent } from './components/product/products-list/products-list.component';
+// import { UserControlComponent } from './components/users-control/user-control/user-control.component';
+// import { ProductsListComponent } from './components/product/products-list/products-list/products-list.component';
 
 // const appRoutes : Routes =[
 //   {path: 'login', component: LoginComponent}
@@ -16,6 +19,7 @@ import {HttpClientModule} from '@angular/common/http';
   declarations: [
   AppComponent,
   routingComponents,
+  ProductsListComponent,
     // LoginComponent,
     // MenuComponent,
   ],
