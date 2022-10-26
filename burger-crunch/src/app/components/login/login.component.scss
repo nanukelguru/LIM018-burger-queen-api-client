@@ -15,6 +15,11 @@
   text-align: center;
 }
 
+.logo-container img{
+  margin: 130px;
+  width: 32%;
+}
+
 .input{
   width: 50%;
   height: 43px;
@@ -23,7 +28,7 @@
   border-radius: 8px;
   font-size: var(--medium);
   padding: 6px;
-  margin-bottom: auto;
+  // margin-bottom: 5px;
 }
 
 .btn-primary{
@@ -31,11 +36,11 @@
   border-radius: 8px;
   color:var(--black);
   cursor:pointer;
-  width: 25%;
-  height: 43px;
+  width: 20%;
+  height: 50px;
   font-size: var(--medium);
   font-weight: bold;
-  margin: 0 auto;
+  margin-top: 45px;
 }
 
 // .description{
