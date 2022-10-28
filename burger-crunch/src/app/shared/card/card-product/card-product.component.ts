@@ -2,6 +2,7 @@ import { Component, Input, Sanitizer, OnInit } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import { Product } from 'src/app/components/product/product-interface';
 import { ProductService } from 'src/app/services/product.service';
+import { Order } from 'src/app/components/orders/order-list/order-interface'
 
 @Component({
   selector: 'app-card-product',
@@ -11,8 +12,14 @@ import { ProductService } from 'src/app/services/product.service';
 export class CardProductComponent implements OnInit {
   @Input() data!: Product;
 
-  public products!: Product[];
+  public qty: number;
+  public order: Order = {
+    _id:'',
+    products:[],
+    total:0
 
+  };
+  public products!: Product[];
   constructor(
     public productService: ProductService,
     private sanitizer: DomSanitizer
@@ -21,6 +28,9 @@ export class CardProductComponent implements OnInit {
   ngOnInit(): void {
     this.products = this.productService.arrayProducts;
   }
-  // public get safeUrlPic() {return this.sanitizer.bypassSecurityTrustResourceUrl(this.data.image);
-  // }
+  increaseQty(product: Product) {
+    this.qty = product.qty +1;
+    product.subTotal= this.qty * product.price
+    this.order.total = this.order.total + product.subTotal
+  }
 }

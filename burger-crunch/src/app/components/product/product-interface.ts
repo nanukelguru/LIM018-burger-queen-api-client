@@ -6,4 +6,10 @@ export interface Product {
   type:string;
   dateEntry:string;
   qty: number;
+  subTotal: number;
+}
+
+export interface Products {
+  qty: number;
+  product: Product;
 }

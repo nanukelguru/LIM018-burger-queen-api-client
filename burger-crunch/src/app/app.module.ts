@@ -10,6 +10,7 @@ import {HttpClientModule} from '@angular/common/http';
 import { ProductsListComponent } from './components/product/products-list/products-list.component';
 import { HeaderComponent } from './layout/header/header.component';
 import { CardProductComponent } from './shared/card/card-product/card-product.component';
+import { OrderListComponent } from './components/orders/order-list/order-list.component';
 // import { UserControlComponent } from './components/users-control/user-control/user-control.component';
 // import { ProductsListComponent } from './components/product/products-list/products-list/products-list.component';
 
@@ -24,6 +25,7 @@ import { CardProductComponent } from './shared/card/card-product/card-product.co
   ProductsListComponent,
   HeaderComponent,
   CardProductComponent,
+  OrderListComponent,
     // LoginComponent,
     // MenuComponent,
   ],
