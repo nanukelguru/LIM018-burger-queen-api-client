@@ -21,7 +21,7 @@ export class UsersService {
 
   getTokenAuth(credential: object): Observable<any> {
     console.log('CREDENTIAL', credential);
-    return this.http.post<any>(this.urlAPI + '/auth', credential,httpOptions);
+    return this.http.post<any>(this.urlAPI + '/auth', credential, httpOptions);
   }
 
   // getUserByEmail(email: string): Observable<User> {

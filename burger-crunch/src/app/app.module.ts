@@ -8,6 +8,8 @@ import { AppComponent } from './app.component';
 import {ReactiveFormsModule, FormsModule} from '@angular/forms'
 import {HttpClientModule} from '@angular/common/http';
 import { ProductsListComponent } from './components/product/products-list/products-list.component';
+import { HeaderComponent } from './layout/header/header.component';
+import { CardProductComponent } from './shared/card/card-product/card-product.component';
 // import { UserControlComponent } from './components/users-control/user-control/user-control.component';
 // import { ProductsListComponent } from './components/product/products-list/products-list/products-list.component';
 
@@ -20,6 +22,8 @@ import { ProductsListComponent } from './components/product/products-list/produc
   AppComponent,
   routingComponents,
   ProductsListComponent,
+  HeaderComponent,
+  CardProductComponent,
     // LoginComponent,
     // MenuComponent,
   ],

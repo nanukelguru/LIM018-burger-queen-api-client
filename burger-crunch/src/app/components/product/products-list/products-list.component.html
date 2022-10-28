@@ -1,1 +1,73 @@
-<p>products-list works!</p>
+<p>menu works!</p>
+<body>
+  <header>
+    <img id="burgerLogo" src="../../../assets/images/icon-burger.png" alt="">
+    <img id="waiterImg" src="../../../assets/images/waiter.png" alt="">
+  </header>
+  <main>
+    <section id="iconsFood">
+      <p></p>
+      <img src="" alt="">
+      <img src="" alt="">
+      <img src="" alt="">
+      <img src="" alt="">
+    </section>
+    <section id="containerSearchFood">
+      <div id="icon">
+        <input id="searchFood" placeholder="Buscar" type="search">
+
+      </div>
+      <div id="containerFood">
+        <app-card-product [data]="product" *ngFor="let product of products"></app-card-product>
+
+      </div>
+    </section>
+    <section id="clientAndOrder">
+      <div id="containerClient">
+        <div>
+          <label for="">Cliente: </label><input type="text">
+        </div>
+        <div>
+          <label for="">Mesa: </label>
+
+          <select name="" id="">
+            <option value="">seleccione</option>
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="">4</option>
+            <option value="">5</option>
+            <option value="">6</option>
+            <option value="">7</option>
+            <option value="">8</option>
+          </select>
+        </div>
+      </div>
+      <div id="containerOrder">
+        <h3>Orden de Pedido</h3>
+        <div id="containerOrderInfo">
+          <div class="orderInfo">
+            <p>Descripción</p>
+            <div id="chooseFood"></div>
+          </div>
+          <div class="orderInfo">
+            <p>Cantidad</p>
+            <div id="quantityFood"></div>
+          </div>
+          <div class="orderInfo">
+            <p>Precio</p>
+            <div id="priceFood"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>Todos los derechos reservados © Copyright</p>
+  </footer>
+</body>
+
+
+      <!-- <div id="containerFood">
+        <app-card-product [data]="product" *ngFor="let product of products"></app-card-product>
+      </div> -->
