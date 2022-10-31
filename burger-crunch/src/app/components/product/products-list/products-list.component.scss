@@ -10,7 +10,7 @@ p{
 main{
   display: flex;
   margin: 20px;
-  height: 570px;
+  height: 100%;
 }
 header{
   background-color: black;
@@ -18,10 +18,10 @@ header{
   justify-content: space-between;
 }
 #burgerLogo{
-  width: 10%;
+  width: 7%;
 }
 #waiterImg{
-  width: 8%;
+  width: 7%;
 }
 #iconsFood{
   background-color: rgba(202, 155, 51, 1);
@@ -93,7 +93,7 @@ button{
 #containerSearchFood{
   width: 50%;
   margin-top: 10px;
-  background-color:aliceblue;
+  // background-color:rgb(8, 116, 211);
 }
 #searchFood{
   border: none;
@@ -103,17 +103,19 @@ button{
   padding: 7px;
   width: 75%;
   margin-top: 8px;
+  margin-left: 18px;
 }
 #clientAndOrder{
   width: 45% ;
   // height: 400px;
 }
 #iconsFood{
-  width: 20%;
+  width: 15%;
   border-radius: 10px;
   margin-bottom: 15px;
   margin-top: 74px;
   box-shadow: 2px 2px 3px 1px;
+  // border: solid rgb(65, 165, 42);
 }
 footer{
   display: flex;
@@ -126,6 +128,15 @@ footer p{
   align-items: center;
   height: 70px;
   margin-top: 30px;
+}
+// app-card-product{
+//   border: solid;
+// }
+#containerFood{
+  // border: solid blue;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
 }
 
 
