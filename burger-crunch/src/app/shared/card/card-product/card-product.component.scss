@@ -23,6 +23,7 @@ fieldset{
 .qty-button{
   font-size: 20px;
   cursor: pointer;
+}
 .card_info p{
   // border: solid brown;
   margin: 0px;
@@ -30,12 +31,10 @@ fieldset{
 
 .addAndPrice{
   display: flex;
-}
-
-
-  // border: solid blue;
+ // border: solid blue;
   padding: 0px;
 }
+
 .addAndPrice p{
   margin: 10px;
   // border: solid green;
@@ -43,6 +42,7 @@ fieldset{
 }
 button{
   margin: 10px;
+  cursor:pointer;
   // border: solid green;
   // padding: 0px;
 }

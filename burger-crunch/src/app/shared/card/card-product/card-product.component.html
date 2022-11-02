@@ -7,9 +7,12 @@
   <div class = "card_info">
     <p>{{data.name}}</p>
   </div>
-  <div class = "inputCant">
-     <button type ="button" class="qty-button" (click)="decreaseQty(data)">-</button>
-    <button type ="button" class="qty-button" (click)="increaseQty(data)">+</button>
-  </div>
+ <div class="addAndPrice">
+    <p>{{data.price | currency: "S/."}}</p>
+    <div class = "increaseCant">
+      <button type ="button" (click)="decreaseQty(data)">-</button>
+      <button type ="button" (click)="increaseQty(data)">+</button>
+    </div>
+</div>
 </fieldset>
 </div>
