@@ -2,14 +2,13 @@
   display: flex;
 }
 fieldset{
-  // border: solid rgb(211, 220, 28);
+  border: solid rgba(190, 183, 168, 0.35);
+  background-color: rgba(190, 183, 168, 0.35);
+  box-shadow: 2px 1px 3px 1px;
   border-radius: 20px;
-  // background-color: rgb(220, 183, 127);
-  background-color: rgba(202, 155, 51, 0.35);
-  // box-shadow: 2px 4px 3px 1px;
-  width: 130px;
-  height: 200px;
-  margin: 3px;
+  width: 120px;
+  height: 170px;
+  margin: 10px;
 }
 .card-image{
   // border: solid green;
@@ -19,10 +18,14 @@ fieldset{
   // border: solid rgb(128, 0, 11);
   width: 120px;
   height: 85px;
+  margin-bottom: 3px;
 }
 .qty-button{
   font-size: 20px;
   cursor: pointer;
+.card_info p{
+  // border: solid brown;
+  margin: 0px;
 }
 
 .addAndPrice{
@@ -30,3 +33,16 @@ fieldset{
 }
 
 
+  // border: solid blue;
+  padding: 0px;
+}
+.addAndPrice p{
+  margin: 10px;
+  // border: solid green;
+  // padding: 0px;
+}
+button{
+  margin: 10px;
+  // border: solid green;
+  // padding: 0px;
+}
