@@ -33,4 +33,9 @@ export class CardProductComponent implements OnInit {
     product.subTotal= this.qty * product.price
     this.order.total = this.order.total + product.subTotal
   }
+
+  decreaseQty(product: Product){
+    this.qty = product.qty = product.qty -1;
+
+  }
 }

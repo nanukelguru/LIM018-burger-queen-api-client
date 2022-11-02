@@ -8,9 +8,9 @@
     <p>{{data.name}}</p>
     <p>{{data.price | currency: "S/."}}</p>
   </div>
-  <div class = "increaseCant">
-    <!-- <button type ="button" (click)="decreaseQty(data)">-</button> -->
-    <button type ="button" (click)="increaseQty(data)">+</button>
+  <div class = "inputCant">
+     <button type ="button" class="qty-button" (click)="decreaseQty(data)">-</button>
+    <button type ="button" class="qty-button" (click)="increaseQty(data)">+</button>
   </div>
 </fieldset>
 </div>
