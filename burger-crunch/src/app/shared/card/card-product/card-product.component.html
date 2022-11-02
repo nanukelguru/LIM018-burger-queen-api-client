@@ -6,11 +6,13 @@
   <!-- <img src='../../../../assets/images/cafe_leche.png'/> -->
   <div class = "card_info">
     <p>{{data.name}}</p>
-    <p>{{data.price | currency: "S/."}}</p>
   </div>
-  <div class = "increaseCant">
-    <!-- <button type ="button" (click)="decreaseQty(data)">-</button> -->
-    <button type ="button" (click)="increaseQty(data)">+</button>
+  <div class="addAndPrice">
+    <p>{{data.price | currency: "S/."}}</p>
+    <div class = "increaseCant">
+      <!-- <button type ="button" (click)="decreaseQty(data)">-</button> -->
+      <button type ="button" (click)="increaseQty(data)">+</button>
+    </div>
   </div>
 </fieldset>
 </div>
