@@ -11,6 +11,7 @@ main{
   display: flex;
   margin: 20px;
   height: 100%;
+  // position: fixed;
 }
 header{
   background-color: black;
@@ -66,22 +67,19 @@ h3{
 #containerOrderInfo{
   display: flex;
   // border: solid;
-  margin-bottom: 15px;
+  margin: 15px 5px;
   height: 300px;
-  margin-top: 5px;
 }
 .orderInfo{
   margin: 40px;
   margin-top: 2px;
 }
 button{
-  margin-bottom: 20px;
   border: none;
   border-radius: 7px;
   background-color: rgb(207, 175, 32);
   cursor: pointer;
-  margin-bottom: 32px;
-  margin-left: 30px;
+  margin: 0 0 30px 32px;
   padding: 5px;
   width: 100px;
 }
@@ -98,8 +96,7 @@ button{
   border: solid 1.4px rgb(84, 83, 83);
   padding: 7px;
   width: 75%;
-  margin-top: 8px;
-  margin-left: 28px;
+  margin: 8px 0 0 28px;
 }
 #clientAndOrder{
   width: 45% ;
@@ -114,7 +111,14 @@ button{
   // border: solid rgb(65, 165, 42);
   background-color: rgba(202, 155, 51, 1);
   margin-right: 20px;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#iconsFood img{
+  width: 38%;
+  margin: 70px;
+  cursor: pointer;
 }
 footer{
   display: flex;
@@ -138,6 +142,49 @@ footer p{
   margin: 20px;
   // justify-content: space-between;
   // border: solid forestgreen;
+}
+@media only screen and (min-width:390px) {
+  main{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    // background-color: black;
+  }
+  #iconsFood{
+    position: sticky;
+    top: 15px;
+    // bottom: 500%;
+  }
+  #containerFood{
+    // border: solid blue;
+    display: flex;
+    // flex-wrap: wrap;
+    align-items: center;
+    margin-left: 60px;
+    // justify-content: center;
+    // justify-content: space-between;
+    // border: solid forestgreen;
+  }
+  #containerSearchFood{
+    width: 100%;
+    margin-left: 30px;
+    // background-color:rgb(8, 116, 211);
+  }
+  #clientAndOrder{
+    width: 100%;
+  }
+  .orderInfo{
+    margin: 20px;
+    margin-top: 2px;
+  }
+  #containerClient input{
+    width: 60%;
+  }
+  #containerClient select{
+    width: 50%;
+  }
+
+
 }
 
 

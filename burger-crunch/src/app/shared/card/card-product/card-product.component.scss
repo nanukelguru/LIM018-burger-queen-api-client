@@ -30,19 +30,28 @@ fieldset{
 }
 
 .addAndPrice{
-  display: flex;
+  // display: flex;
  // border: solid blue;
   padding: 0px;
 }
 
 .addAndPrice p{
-  margin: 10px;
+  margin: 0;
   // border: solid green;
   // padding: 0px;
 }
+
+.increaseCant{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+}
+
 button{
-  margin: 10px;
+  // margin: 10px;
   cursor:pointer;
-  // border: solid green;
-  // padding: 0px;
+}
+input{
+  width: 20px;
 }
